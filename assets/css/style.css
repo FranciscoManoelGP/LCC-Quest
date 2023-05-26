@@ -15,7 +15,7 @@ body {
     "top top top top top"
     "nav content content content content"
     "nav content content content content"
-    "botton botton botton botton botton";
+    "bottom bottom bottom bottom bottom";
 }
 
 header {
@@ -34,7 +34,7 @@ aside{
   align-items: center;
 }
 
-.side_navebar {
+.side_navbar {
   background-color: #D1BE9D;
   display: flex;
   flex-direction: column;
@@ -48,13 +48,12 @@ ul{
 
 .container {
   grid-area: content;
-  padding: 20px;
-  background-color: #c8c8c8;
 }
 
 footer {
-  grid-area: botton;
+  grid-area: bottom;
 }
+
 input.checkbox {
   height: 30px;
   width: 30px;
@@ -64,6 +63,10 @@ input.checkbox {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #c8c8c8;
 }
 .title{
   grid-column-start: 1;
