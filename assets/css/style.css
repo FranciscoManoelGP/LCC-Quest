@@ -9,57 +9,76 @@ html {
 }
 
 body {
-  background-color: #888a85;
-}
-
-.grid {
+  background-color: #064273;
   display: grid;
   grid-template-areas:
-    "topo topo topo topo topo"
+    "top top top top top"
     "nav content content content content"
     "nav content content content content"
-    "rodape rodape rodape rodape rodape";
+    "botton botton botton botton botton";
 }
 
 header {
-  background-color: green;
-  grid-area: topo;
+  grid-area: top;
+  display: flex;
+  flex-direction: row;
+
   height: 120px;
 }
 
-.side_navebar {
+aside{
   grid-area: nav;
+  width: 200px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.side_navebar {
+  background-color: #D1BE9D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+ul{
+  list-style-type: none;
 }
 
 .container {
   grid-area: content;
-  width: 100%;
   padding: 20px;
-  background-color: darkgrey;
-}
-
-section {
-  width: 100%;
+  background-color: #c8c8c8;
 }
 
 footer {
-  grid-area: rodape;
+  grid-area: botton;
 }
-
 input.checkbox {
   height: 30px;
   width: 30px;
 }
-.sec_1{
+.sec{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 .title{
-   grid-column-start: 1;
-   grid-column-end: 4;
-   grid-row-start: 1;
-   grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+.materia{
+  background-color: #787878;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  height: 150px;
 }
