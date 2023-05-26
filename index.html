@@ -6,35 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LCC Quest</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="grid"">
+<body>
   <header>
     <h1>LCC Quest</h1>
 
-    <p>Você selecionou <span id=" contador">0</span> vezes</p>
-
-  <a href="login.html">login</a>
-
+    <ul class="auth_buttons">
+      <li><a href="pages/login.html" class="btn_login">Log In</a></li>
+      <li><a href="#" class="btn_logout">Log Out</a></li>
+    </ul>
   </header>
 
   <aside>
+    <p>Você selecionou <span id=" contador">0</span> vezes</p>
     <nav class="side_navebar">
-      <a href="#" class="semester first_semester">1</a>
-      <a href="#" class="semester second_semester">2</a>
-      <a href="#" class="semester third_semester">3</a>
-      <a href="#" class="semester fourth_semester">4</a>
-      <a href="#" class="semester fifth_semester">5</a>
-      <a href="#" class="semester sixth_semester">6</a>
-      <a href="#" class="semester seventh_semester">7</a>
-      <a href="#" class="semester eighth_semester">8</a>
-      <a href="#" class="semester outhers">O</a>
+      <ul>
+        <li><a href="#" class="semester first_semester">1</a></li>
+        <li><a href="#" class="semester second_semester">2</a></li>
+        <li><a href="#" class="semester third_semester">3</a></li>
+        <li><a href="#" class="semester fourth_semester">4</a></li>
+        <li><a href="#" class="semester fifth_semester">5</a></li>
+        <li><a href="#" class="semester sixth_semester">6</a></li>
+        <li><a href="#" class="semester seventh_semester">7</a></li>
+        <li><a href="#" class="semester eighth_semester">8</a></li>
+        <li><a href="#" class="semester outhers">O</a></li>
+      </ul>
     </nav>
   </aside>
 
   <div class="container">
-    <Section class="sec_1">
+    <Section class="sec_1 sec">
       <div class="title">
         <h2>Primeiro Semestre</h2>
         <p>Carga horária: 380</p>
@@ -64,13 +67,11 @@
         <input type="checkbox" name="" class="checkbox ">
       </div>
     </Section>
-    <Section class="sec_2">
+    <Section class="sec_2 sec">
+      <div class="title">
       <h2>Segundo Semestre</h2>
       <p>Carga horária: 360</p>
-
-      <article>
-
-      </article>
+      </div>
       <div class="materia mat1">
         <h4>Inglês Instrumental</h4>
         <input type="checkbox" name="Inglês Instrumental" class="checkbox Inglês Instrumental">
@@ -100,157 +101,231 @@
       </div>
 
     </Section>
-    <Section class="sec_3">
+    <Section class="sec_3 sec">
       <div class="title">
         <h2>Terceiro Semestre</h2>
         <p>Carga horária: 380</p>
       </div>
-      <article>
-
-      </article>
+      <div class="materia mat1">
       <h4>Psicologia da Educação</h4>
       <input type="checkbox" name="" class="checkbox format PE">
+      </div>
+      <div class="materia mat2">
       <h4>Linguagem de Programação Orientada a Objetos</h4>
       <input type="checkbox" name="" class="checkbox format POO">
+      </div>
+      <div class="materia mat3">
       <h4>Sistemas Digitais</h4>
       <input type="checkbox" name="" class="checkbox format SD">
+      </div>
+      <div class="materia mat4">
       <h4>Geometria Analítica e Álgebra Linear</h4>
       <input type="checkbox" name="" class="checkbox format GAA">
+      </div>
+      <div class="materia mat5">
       <h4>Pesquisa e Prática Pedagógica III</h4>
       <input type="checkbox" name="" class="checkbox  PPP3">
+      </div>
+      <div class="materia mat6">
       <h4>Seminário Temático Interdisciplinar III</h4>
       <input type="checkbox" name="" class="checkbox">
+      </div>
       <label>
 
       </label>
     </Section>
-    <Section class="sec_4">
+    <Section class="sec_4 sec">
+      <div class="title">
       <h2>Quarto Semestre</h2>
       <p>Carga horária: 360</p>
-      <article>
-
-      </article>
+      </div>
+      <div class="materia mat1">
       <h4>Didática</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat2">
       <h4>Engenharia de Software</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat3">
       <h4>Organização e Arquitetura de Computadores</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat4">
       <h4>Matemática Aplicada</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat5">
       <h4>Pesquisa e Prática Pedagógica IV</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat6">
       <h4>Seminário Temático Interdisciplinar IV</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
 
       <label>
 
       </label>
     </Section>
-    <Section class="sec_5">
+    <Section class="sec_5 sec">
+      <div class="title">
       <h2>Quinto Semestre</h2>
       <p>Carga horária: 360</p>
-      <article>
-
-      </article>
+      </div>
+      <div class="materia mat1">
       <h4>Políticas Educacionais</h4>
       <input type="checkbox" name="Políticas Educacionais" class="checkbox ">
+      </div>
+      <div class="materia mat2">
       <h4>Banco de Dados</h4>
       <input type="checkbox" name="Banco de Dados" class="checkbox ">
+      </div>
+      <div class="materia mat3">
       <h4>Análise e progetos de Sistemas da Informação</h4>
       <input type="checkbox" name="Análise e Projetos de Sistemas da Informação" class="checkbox ">
+      </div>
+      <div class="materia mat4">
       <h4>Sistemas Operacionais</h4>
       <input type="checkbox" name="Sistemas Operacionais" class="checkbox ">
+      </div>
+      <div class="materia mat5">
       <h4>Estagio I</h4>
       <input type="checkbox" name="Estagio I" class="checkbox ">
+      </div>
+      <div class="materia mat6">
       <h4>Libras</h4>
       <input type="checkbox" name="Libras" class="checkbox ">
+      </div>
 
     </Section>
-    <Section class="sec_6">
+    <Section class="sec_6 sec">
+      <div class="title">
       <h2>Sexto Semestre</h2>
       <p>Carga horária: 416</p>
-      <article>
-
-      </article>
+      </div>
+      <div class="materia mat1">
       <h4>TCC I</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat2">
       <h4>Banco de Dados II</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat3">
       <h4>Desenvolvimento Web I</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat4">
       <h4>Redes de Computadores</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat5">
       <h4>Estágio II</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat6">
       <h4>Optativa </h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
       <label>
 
       </label>
 
     </Section>
-    <Section class="sec_7">
+    <Section class="sec_7 sec">
+      <div class="title">
       <h2>Sétimo Semestre</h2>
       <p>Carga horária: 390</p>
-      <article>
-
-      </article>
+      </div>
+      <div class="materia mat1">
       <h4>Multimídia na Educação</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat2">
       <h4>Software Educacional</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat3">
       <h4>Desenvolvimento Web II</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat4">
       <h4>Aplicações Gráficas</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat5">
       <h4>Estágio III</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat6">
       <h4>Optativa</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      
       <label>
 
       </label>
     </Section>
-    <Section class="sec_8">
+    <Section class="sec_8 sec">
+      <div class="title">
       <h2>Oitavo Semestre</h2>
       <p>Carga horária: 360</p>
-      <article>
-
-      </article>
+      </div>
+      <div class="materia mat1">
       <h4>TCC II</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat2">
       <h4>Ambientes Virtuais de Aprendizagem</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat3">
       <h4>Inteligência Artificial</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat4">
       <h4>Estágio IV</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
+      <div class="materia mat5">
       <h4>Optativa</h4>
       <input type="checkbox" name="" class="checkbox ">
+      </div>
 
       <label>
 
       </label>
     </Section>
-    <Section class="sec_8">
+    <Section class="sec_8 sec">
+      <div class="title">
       <h2>Optativas</h2>
       <p>Carga horária: 360</p>
-      <article>
-
-      </article>
+      </div>
+      <div class="materia mat1">
       <h4>Leitura e Produção de Texto </h4>
-      <input type="checkbox" name="Leitura e Produção de Texto " class=" ">
+      <input type="checkbox" name="Leitura e Produção de Texto " class="checkbox ">
+      </div>
+      <div class="materia mat2">
       <h4>Interface Homem Máquina</h4>
       <input type="checkbox" name="Interface Homem Máquina" class="checkbox ">
+      </div>
+      <div class="materia mat3">
       <h4>Designer Instrucional</h4>
       <input type="checkbox" name="Designer Instrucional" class="checkbox ">
+      </div>
+      <div class="materia mat4">
       <h4>Software Livre e inclusão Digital</h4>
       <input type="checkbox" name="Software Livre e inclusão Digital" class="checkbox ">
+      </div>
+      <div class="materia mat5">
       <h4>Estagio I</h4>
       <input type="checkbox" name="Estagio I" class="checkbox Estagio I">
+      </div>
+      <div class="materia mat6">
       <h4>Libras</h4>
       <input type="checkbox" name="Libras" class="checkbox Libras">
+      </div>
     </Section>
   </div>
 
