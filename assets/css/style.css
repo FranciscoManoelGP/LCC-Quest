@@ -22,11 +22,28 @@ header {
   grid-area: top;
   display: flex;
   flex-direction: row;
-
-  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin: 50px 10px;
+  height: 70px;
+  border-radius: 15px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 50%);
 }
 
-aside{
+#to_top_btn{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  text-align: center;
+  padding: 15px 5px;
+  border-radius: 20%;
+  background-color: black;
+}
+
+aside {
   grid-area: nav;
   width: 200px;
   display: flex;
@@ -40,9 +57,14 @@ aside{
   flex-direction: column;
   align-items: center;
   width: 75%;
+  padding: 15px 0;
+
+  position: sticky;
+  top: 120px;
+  bottom: 0;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
@@ -58,7 +80,8 @@ input.checkbox {
   height: 30px;
   width: 30px;
 }
-.sec{
+
+.sec {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -66,9 +89,10 @@ input.checkbox {
   width: 95%;
   padding: 10px;
   margin-bottom: 5px;
-  background-color: #c8c8c8;
+  background-color: #B9A37E;
 }
-.title{
+
+.title {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -78,8 +102,9 @@ input.checkbox {
   margin-bottom: auto;
   text-align: center;
 }
-.materia{
-  background-color: #787878;
+
+.materia {
+  background-color: #82A775;
   padding: 20px;
   border-radius: 20px;
   font-size: 20px;
