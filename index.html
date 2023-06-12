@@ -9,7 +9,7 @@
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body id="page_top">
+<body>
   <header>
     <h1>LCC Quest</h1>
 
@@ -19,10 +19,12 @@
     </ul>
   </header>
 
-  <a href="#page_top" id="to_top_btn">to top</a>
+  <a href="#" id="to_top_btn">to top</a>
   <aside>
     <nav class="side_navbar">
-      <p><span id="result"></span></p>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
 
       <ul>
         <li><a href="#first_semester" class="semester first_semester">1</a></li>
@@ -43,6 +45,9 @@
       <div class="title">
         <h2>Primeiro Semestre</h2>
         <p>Carga horária: 380</p>
+        <a class="check_all" href="#first_semester">
+          <p style="font-size: x-small;">Marque todas as materis</p>
+        </a>
       </div>
       <div class="materia mat1">
         <h4>Fundamentos Filosóficos e Sociológicos Educacionais</h4>
@@ -73,6 +78,9 @@
       <div class="title">
         <h2>Segundo Semestre</h2>
         <p>Carga horária: 360</p>
+        <a class="check_all" href="#second_semester">
+          <p style="font-size: x-small;">Marque todas as materis</p>
+        </a>
       </div>
       <div class="materia mat1">
         <h4>Inglês Instrumental</h4>
@@ -107,6 +115,9 @@
       <div class="title">
         <h2>Terceiro Semestre</h2>
         <p>Carga horária: 380</p>
+        <a class="check_all" href="#third_semester">
+          <p style="font-size: x-small;">Marque todas as materis</p>
+        </a>
       </div>
       <div class="materia mat1">
         <h4>Psicologia da Educação</h4>
@@ -140,6 +151,9 @@
       <div class="title">
         <h2>Quarto Semestre</h2>
         <p>Carga horária: 360</p>
+        <a class="check_all" href="#fourth_semester">
+          <p style="font-size: x-small;">Marque todas as materis</p>
+        </a>
       </div>
       <div class="materia mat1">
         <h4>Didática</h4>
@@ -174,6 +188,9 @@
       <div class="title">
         <h2>Quinto Semestre</h2>
         <p>Carga horária: 360</p>
+        <a class="check_all" href="#fifth_semester">
+          <p style="font-size: x-small;">Marque todas as materis</p>
+        </a>
       </div>
       <div class="materia mat1">
         <h4>Políticas Educacionais</h4>
@@ -205,6 +222,9 @@
       <div class="title">
         <h2>Sexto Semestre</h2>
         <p>Carga horária: 416</p>
+        <a class="check_all" href="#sixth_semester">
+          <p style="font-size: x-small;">Marque todas as materis</p>
+        </a>
       </div>
       <div class="materia mat1">
         <h4>TCC I</h4>
@@ -227,7 +247,10 @@
         <input type="checkbox" name="" class="checkbox ">
       </div>
       <div class="materia mat6">
-        <h4>Optativa </h4>
+        <select name="" id="">
+          <option value="">Optativa</option>
+          <option value="lpt">Leitura e Produção de Texto</option>
+        </select>
         <input type="checkbox" name="" class="checkbox ">
       </div>
       <label>
@@ -239,6 +262,9 @@
       <div class="title">
         <h2>Sétimo Semestre</h2>
         <p>Carga horária: 390</p>
+        <a class="check_all" href="#seventh_semester">
+          <p style="font-size: x-small;">Marque todas as materis</p>
+        </a>
       </div>
       <div class="materia mat1">
         <h4>Multimídia na Educação</h4>
@@ -261,7 +287,10 @@
         <input type="checkbox" name="" class="checkbox ">
       </div>
       <div class="materia mat6">
-        <h4>Optativa</h4>
+        <select name="" id="">
+          <option value="">Optativa</option>
+          <option value="lpt">Leitura e Produção de Texto</option>
+        </select>
         <input type="checkbox" name="" class="checkbox ">
       </div>
 
@@ -273,6 +302,9 @@
       <div class="title">
         <h2>Oitavo Semestre</h2>
         <p>Carga horária: 360</p>
+        <a class="check_all" href="#eighth_semester">
+          <p style="font-size: x-small;">Marque todas as materis</p>
+        </a>
       </div>
       <div class="materia mat1">
         <h4>TCC II</h4>
@@ -291,7 +323,10 @@
         <input type="checkbox" name="" class="checkbox ">
       </div>
       <div class="materia mat5">
-        <h4>Optativa</h4>
+        <select name="" id="">
+          <option value="">Optativa</option>
+          <option value="lpt">Leitura e Produção de Texto</option>
+        </select>
         <input type="checkbox" name="" class="checkbox ">
       </div>
 
@@ -306,27 +341,27 @@
       </div>
       <div class="materia mat1">
         <h4>Leitura e Produção de Texto </h4>
-        <input type="checkbox" name="Leitura e Produção de Texto " class="checkbox ">
+
       </div>
       <div class="materia mat2">
         <h4>Interface Homem Máquina</h4>
-        <input type="checkbox" name="Interface Homem Máquina" class="checkbox ">
+
       </div>
       <div class="materia mat3">
         <h4>Designer Instrucional</h4>
-        <input type="checkbox" name="Designer Instrucional" class="checkbox ">
+
       </div>
       <div class="materia mat4">
         <h4>Software Livre e inclusão Digital</h4>
-        <input type="checkbox" name="Software Livre e inclusão Digital" class="checkbox ">
+
       </div>
       <div class="materia mat5">
         <h4>Estagio I</h4>
-        <input type="checkbox" name="Estagio I" class="checkbox Estagio I">
+
       </div>
       <div class="materia mat6">
         <h4>Libras</h4>
-        <input type="checkbox" name="Libras" class="checkbox Libras">
+
       </div>
     </section>
   </div>
