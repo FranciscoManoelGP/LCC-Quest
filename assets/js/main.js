@@ -1,5 +1,4 @@
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-const resultSpan = document.getElementById('result');
 const sections = document.querySelectorAll('.sec');
 
 checkboxes.forEach(checkbox => {
@@ -15,5 +14,10 @@ sections.forEach(section => {
         checkbox.addEventListener('change', () => {
             updateSubjectCounts(section); // Chamada da função para contabilização por seção
         });
+    });
+
+    const buttonCheckAll = section.querySelector('.check_all');
+    buttonCheckAll.addEventListener('click', () => {
+        checkAll(section);
     });
 });
