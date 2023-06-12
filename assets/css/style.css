@@ -25,8 +25,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  margin: 50px 10px;
-  height: 70px;
+  margin: 30px 10px;
+  height: 60px;
   border-radius: 15px;
   color: aliceblue;
   background-color: rgba(0, 0, 0, 50%);
@@ -52,20 +52,44 @@ aside {
 }
 
 .side_navbar {
-  background-color: #D1BE9D;
+  background-image: url(../media/images/map_nav_bar-Copia.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  width: 90%;
   padding: 15px 0;
+  height: 240px;
 
   position: sticky;
   top: 120px;
   bottom: 0;
 }
 
-ul {
+ul{
   list-style-type: none;
+}
+
+.side_navbar>ul {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.progress-bar {
+  width: 50%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
 }
 
 .container {
