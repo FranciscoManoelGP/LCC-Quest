@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  background-color: #064273;
+
+  background-image: url("../media/images/Fundo.png");
   display: grid;
   grid-template-areas:
     "top top top top top"
@@ -32,7 +33,7 @@ header {
   background-color: rgba(0, 0, 0, 50%);
 }
 
-#to_top_btn{
+#to_top_btn {
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -66,7 +67,7 @@ aside {
   bottom: 0;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
@@ -85,7 +86,7 @@ ul{
   overflow: hidden;
 }
 
-.progress_bar{
+.progress_bar {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -95,7 +96,8 @@ ul{
   overflow: hidden;
 }
 
-.progress, .global_progress {
+.progress,
+.global_progress {
   height: 100%;
   background-color: #4CAF50;
   width: 0%;
@@ -119,9 +121,10 @@ input.checkbox {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  border-radius: 0 0 20px 20px;
   width: 95%;
   margin-bottom: 5px;
-  background-color: #b9a37e;
+  background-color: #B9A37E;
 }
 
 .title {
@@ -142,4 +145,43 @@ input.checkbox {
   font-size: 20px;
   height: 150px;
   margin: 5px;
+}
+
+.email {
+  color: #ffffff;
+}
+
+select {
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 20px;
+  font-family: times;
+}
+
+.explain {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #000000;
+  max-width: 500px;
+  z-index: 9999;
+}
+
+.explain.show {
+  display: block;
+}
+
+.explain .explain_content {
+  position: relative;
+}
+
+.explain .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }

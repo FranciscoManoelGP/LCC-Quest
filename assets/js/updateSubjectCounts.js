@@ -11,17 +11,12 @@ function updateSubjectCounts(section) {
 
     const allPercentage = (allChecked / totalCount) * 100;
 
-    //Chamada da função para barra de progresso
-
-    //Chamada da função para barra de progresso global
-    
     if (section) {
         const progressBar = section.querySelector('.progress');
         updateProgressBar(allPercentage, progressBar);
-    }else{
+    } else {
         const globalProgressBar = document.querySelector('.global_progress');
         updateProgressBar(allPercentage, globalProgressBar);
-
     }
 }
 
@@ -38,7 +33,6 @@ function updateProgressBar(progress, progressBar) {
 }
 
 function checkAll(section, sectionCheckboxes) {
-    //const sectionCheckboxes = section.querySelectorAll('input[type="checkbox"]');
     sectionCheckboxes.forEach(checkbox => {
         checkbox.checked = true;
     });
