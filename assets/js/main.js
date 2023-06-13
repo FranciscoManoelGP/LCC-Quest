@@ -9,6 +9,7 @@ checkboxes.forEach(checkbox => {
 
 sections.forEach(section => {
     const sectionCheckboxes = section.querySelectorAll('input[type="checkbox"]');
+    const buttonCheckAll = section.querySelector('.check_all');
 
     sectionCheckboxes.forEach(checkbox => {
         checkbox.addEventListener('change', () => {
@@ -16,8 +17,7 @@ sections.forEach(section => {
         });
     });
 
-    const buttonCheckAll = section.querySelector('.check_all');
     buttonCheckAll.addEventListener('click', () => {
-        checkAll(section);
+        checkAll(section, sectionCheckboxes);
     });
 });

@@ -11,19 +11,22 @@ function updateSubjectCounts(section) {
 
     const allPercentage = (allChecked / totalCount) * 100;
 
-    //Criar uma logica para mostra semestres completos, meio completo e não feito 
-    console.log(`Total Checked ${section ? 'in Section' : 'Overall'}:`, allChecked);
-    console.log(`Total Count ${section ? 'in Section' : 'Overall'}:`, totalCount);
-    console.log(`Percentage ${section ? 'in Section' : 'Overall'}:`, allPercentage.toFixed(2) + '%');
+    //Chamada da função para barra de progresso
 
-    if (!section) {
-        upadateProgressBar(allPercentage); //Chamada da função de barra de progresso global
+    //Chamada da função para barra de progresso global
+    
+    if (section) {
+        const progressBar = section.querySelector('.progress');
+        updateProgressBar(allPercentage, progressBar);
+    }else{
+        const globalProgressBar = document.querySelector('.global_progress');
+        updateProgressBar(allPercentage, globalProgressBar);
+
     }
 }
 
-//Atualizar barra de progresso global
-function upadateProgressBar(progress) {
-    const progressBar = document.querySelector('.progress');
+//Atualizar barras de progresso
+function updateProgressBar(progress, progressBar) {
     progressBar.style.width = progress + '%';
     if (progress < 30) {
         progressBar.style.backgroundColor = "red";
@@ -34,10 +37,11 @@ function upadateProgressBar(progress) {
     }
 }
 
-function checkAll(section) {
-    const sectionCheckboxes = section.querySelectorAll('input[type="checkbox"]');
+function checkAll(section, sectionCheckboxes) {
+    //const sectionCheckboxes = section.querySelectorAll('input[type="checkbox"]');
     sectionCheckboxes.forEach(checkbox => {
         checkbox.checked = true;
     });
+    updateSubjectCounts(section);
     updateSubjectCounts(null); // Chama a função após marcar todas as checkboxes da seção
 }
