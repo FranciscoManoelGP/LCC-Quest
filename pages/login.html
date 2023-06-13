@@ -6,21 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LCC Quest</title>
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/auth_style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <main>
-    <form class="formLogin">
-      <h1>Login</h1>
-      <label for="email">E-mail</label>
-      <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-      <label for="password">Senha</label>
-      <input type="password" placeholder="Digite seu e-mail" />
-      <a href="#">Esqueci minha senha</a>
-      <button class="login_btn">Logar</button>
+  <div class="container">
+    <h1>Tela de Registro</h1>
+    <form>
+      <label for="username">Nome de usuário:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Registrar">
     </form>
-  </main>
+  </div>
 </body>
 
 </html>
