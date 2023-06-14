@@ -5,6 +5,6 @@ const subjects = {
     },
     "mat2": {
       title: "Algoritmo e Introdução a Programação",
-      content: "Coloca um resumo da ementa aqui."
+      content: "Algoritmos e lógica de programação, tipos de dados, constantes e variáveis simples, estruturas de controle sequencial, condicional e repetição. Variáveis compostas homogêneas. Tipos abstratos de dados. Recursividade. Busca em vetores. Utilização de uma linguagem de programação. Funções e procedimentos"
     }
   }
