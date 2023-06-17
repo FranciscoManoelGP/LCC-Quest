@@ -1,14 +1,13 @@
-const subjectsDivs = document.querySelectorAll('.materia');
+const subjects = document.querySelectorAll('.materia');
 const explain = document.getElementById('explain');
 const closeButton = explain.querySelector('.close');
 const explainContent = explain.querySelector('.explain_content');
 
-subjectsDivs.forEach(div => {
-    const checkbox = div.querySelector('input[type="checkbox"]');
-    const subjectClass = div.classList[1];
-    const explanation = subjects[subjectClass];
+subjects.forEach(subject => {
+    const checkbox = subject.querySelector('input[type="checkbox"]');
+    const explanation = subjectList[subject.id];
 
-    div.addEventListener('click', (event) => {
+    subject.addEventListener('click', (event) => {
         if (event.target !== checkbox) {
             showExplanation(explanation);
         }
