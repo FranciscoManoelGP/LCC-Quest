@@ -2,488 +2,489 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LCC Quest</title>
-  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCC Quest</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/phone_style.css">
 </head>
 
 <body>
-  <header>
-    <h1>LCC Quest</h1>
+    <header>
+        <h1>LCC Quest</h1>
 
-    <ul class="auth_buttons">
-      <li><a href="pages/login.html" class="btn_login">Log In</a></li>
-      <li><a href="pages/register.html" class="btn_register">Register</a>
-    </ul>
-  </header>
+        <ul class="auth_buttons">
+            <li><a href="pages/login.html" id="btn_login">Log In</a></li>
 
-  <a href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square"
-      id="to_top_btn" viewBox="24">
-      <path fill-rule="evenodd"
-        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
-    </svg>
-  </a>
+        </ul>
+    </header>
 
-  <aside>
-    <nav class="side_navbar">
-      <div class="global_progress_bar">
-        <div class="global_progress"></div>
-      </div>
+    <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square"
+            id="to_top_btn" viewBox="24">
+            <path fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+    </a>
 
-      <ul>
-        <li><a href="#first_semester" class="semester first_semester">1</a></li>
-        <li><a href="#second_semester" class="semester second_semester">2</a></li>
-        <li><a href="#third_semester" class="semester third_semester">3</a></li>
-        <li><a href="#fourth_semester" class="semester fourth_semester">4</a></li>
-        <li><a href="#fifth_semester" class="semester fifth_semester">5</a></li>
-        <li><a href="#sixth_semester" class="semester sixth_semester">6</a></li>
-        <li><a href="#seventh_semester" class="semester seventh_semester">7</a></li>
-        <li><a href="#eighth_semester" class="semester eighth_semester">8</a></li>
-        <li><a href="#outhers" class="semester outhers">O</a></li>
-      </ul>
-    </nav>
-  </aside>
+    <aside>
+        <nav class="side_navbar">
+            <div class="global_progress_bar">
+                <div class="global_progress"></div>
+            </div>
 
-  <div class="container">
-    <section id="first_semester" class="sec">
-      <div class="progress_bar">
-        <div class="progress"></div>
-      </div>
-      <div class="title">
-        <h2>Primeiro Semestre</h2>
-        <p>Carga horária: 380</p>
-        <p style="font-size: x-small;">
-          <a class="check_all" href="#first_semester">Marque todas as matérias</a>
-        </p>
+            <ul>
+                <li><a href="#first_semester" class="semester first_semester">1</a></li>
+                <li><a href="#second_semester" class="semester second_semester">2</a></li>
+                <li><a href="#third_semester" class="semester third_semester">3</a></li>
+                <li><a href="#fourth_semester" class="semester fourth_semester">4</a></li>
+                <li><a href="#fifth_semester" class="semester fifth_semester">5</a></li>
+                <li><a href="#sixth_semester" class="semester sixth_semester">6</a></li>
+                <li><a href="#seventh_semester" class="semester seventh_semester">7</a></li>
+                <li><a href="#eighth_semester" class="semester eighth_semester">8</a></li>
+                <li><a href="#outhers" class="semester outhers">O</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-      </div>
-      <div id="FUN0001" class="materia mat1">
-        <h4>Fundamentos Filosóficos e Sociológicos Educacionais</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div id="ALG0001" class="materia mat2">
-        <h4>Algoritmo e Introdução a Programação</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat3">
-        <h4>Introdução a Computação</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat4">
-        <h4>Fundamentos da Matemática</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat5">
-        <h4>Pesquisa e Prática Pedagógica I</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat6">
-        <h4>Seminário Temático Interdisciplinar I</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-    </section>
+    <div class="container">
+        <section id="first_semester" class="sec">
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="title">
+                <h2>Primeiro Semestre</h2>
+                <p>Carga horária: 380</p>
+                <p style="font-size: x-small;">
+                    <a class="check_all" href="#first_semester">Marque todas as matérias</a>
+                </p>
 
-    <section id="second_semester" class="sec">
-      <div class="progress_bar">
-        <div class="progress"></div>
-      </div>
-      <div class="title">
-        <h2>Segundo Semestre</h2>
-        <p>Carga horária: 360</p>
-        <p style="font-size: x-small;">
-          <a class="check_all" href="#second_semester">Marque todas as matérias</a>
-        </p>
-      </div>
-      <div class="materia mat1">
-        <h4>Inglês Instrumental</h4>
-        <input type="checkbox" name="Inglês Instrumental" class="checkbox Inglês Instrumental">
-      </div>
-      <div class="materia mat2">
-        <h4>Metodologia da Pesquisa Científica</h4>
-        <input type="checkbox" name="Metodologia da Pesquisa Científica"
-          class="checkbox Metodologia da Pesquisa Científica">
-      </div>
-      <div class="materia mat3">
-        <h4>Estrutura de Dados</h4>
-        <input type="checkbox" name="estrutura de Dados" class="checkbox estrutura de Dados">
-      </div>
-      <div class="materia mat4">
-        <h4>Estatística Básica</h4>
-        <input type="checkbox" name="estatística Básica" class="checkbox estatística Básica">
-      </div>
-      <div class="materia mat5">
-        <h4>Pesquisa e Prática Pedagógica II</h4>
-        <input type="checkbox" name="Pesquisa e Prática Pedagógica II"
-          class="checkbox Pesquisa e Prática Pedagógica II">
-      </div>
-      <div class="materia mat6">
-        <h4>Seminário Temático Interdiciplinar II</h4>
-        <input type="checkbox" name="Seminário Temático Interdiciplinar"
-          class="checkbox Seminário Temático Interdiciplinar">
-      </div>
+            </div>
+            <div id="FUN0001" class="materia mat1">
+                <h4>Fundamentos Filosóficos e Sociológicos Educacionais</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div id="ALG0001" class="materia mat2">
+                <h4>Algoritmo e Introdução a Programação</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat3">
+                <h4>Introdução a Computação</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat4">
+                <h4>Fundamentos da Matemática</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat5">
+                <h4>Pesquisa e Prática Pedagógica I</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat6">
+                <h4>Seminário Temático Interdisciplinar I</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+        </section>
 
-    </section>
+        <section id="second_semester" class="sec">
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="title">
+                <h2>Segundo Semestre</h2>
+                <p>Carga horária: 360</p>
+                <p style="font-size: x-small;">
+                    <a class="check_all" href="#second_semester">Marque todas as matérias</a>
+                </p>
+            </div>
+            <div class="materia mat1">
+                <h4>Inglês Instrumental</h4>
+                <input type="checkbox" name="Inglês Instrumental" class="checkbox Inglês Instrumental">
+            </div>
+            <div class="materia mat2">
+                <h4>Metodologia da Pesquisa Científica</h4>
+                <input type="checkbox" name="Metodologia da Pesquisa Científica"
+                    class="checkbox Metodologia da Pesquisa Científica">
+            </div>
+            <div class="materia mat3">
+                <h4>Estrutura de Dados</h4>
+                <input type="checkbox" name="estrutura de Dados" class="checkbox estrutura de Dados">
+            </div>
+            <div class="materia mat4">
+                <h4>Estatística Básica</h4>
+                <input type="checkbox" name="estatística Básica" class="checkbox estatística Básica">
+            </div>
+            <div class="materia mat5">
+                <h4>Pesquisa e Prática Pedagógica II</h4>
+                <input type="checkbox" name="Pesquisa e Prática Pedagógica II"
+                    class="checkbox Pesquisa e Prática Pedagógica II">
+            </div>
+            <div class="materia mat6">
+                <h4>Seminário Temático Interdiciplinar II</h4>
+                <input type="checkbox" name="Seminário Temático Interdiciplinar"
+                    class="checkbox Seminário Temático Interdiciplinar">
+            </div>
 
-    <section id="third_semester" class="sec">
-      <div class="progress_bar">
-        <div class="progress"></div>
-      </div>
-      <div class="title">
-        <h2>Terceiro Semestre</h2>
-        <p>Carga horária: 380</p>
-        <p style="font-size: x-small;">
-          <a class="check_all" href="#third_semester">Marque todas as matérias</a>
-        </p>
-      </div>
-      <div class="materia mat1">
-        <h4>Psicologia da Educação</h4>
-        <input type="checkbox" name="" class="checkbox format PE">
-      </div>
-      <div class="materia mat2">
-        <h4>Linguagem de Programação Orientada a Objetos</h4>
-        <input type="checkbox" name="" class="checkbox format POO">
-      </div>
-      <div class="materia mat3">
-        <h4>Sistemas Digitais</h4>
-        <input type="checkbox" name="" class="checkbox format SD">
-      </div>
-      <div class="materia mat4">
-        <h4>Geometria Analítica e Álgebra Linear</h4>
-        <input type="checkbox" name="" class="checkbox format GAA">
-      </div>
-      <div class="materia mat5">
-        <h4>Pesquisa e Prática Pedagógica III</h4>
-        <input type="checkbox" name="" class="checkbox  PPP3">
-      </div>
-      <div class="materia mat6">
-        <h4>Seminário Temático Interdisciplinar III</h4>
-        <input type="checkbox" name="" class="checkbox">
-      </div>
-      <label>
+        </section>
 
-      </label>
-    </section>
+        <section id="third_semester" class="sec">
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="title">
+                <h2>Terceiro Semestre</h2>
+                <p>Carga horária: 380</p>
+                <p style="font-size: x-small;">
+                    <a class="check_all" href="#third_semester">Marque todas as matérias</a>
+                </p>
+            </div>
+            <div class="materia mat1">
+                <h4>Psicologia da Educação</h4>
+                <input type="checkbox" name="" class="checkbox format PE">
+            </div>
+            <div class="materia mat2">
+                <h4>Linguagem de Programação Orientada a Objetos</h4>
+                <input type="checkbox" name="" class="checkbox format POO">
+            </div>
+            <div class="materia mat3">
+                <h4>Sistemas Digitais</h4>
+                <input type="checkbox" name="" class="checkbox format SD">
+            </div>
+            <div class="materia mat4">
+                <h4>Geometria Analítica e Álgebra Linear</h4>
+                <input type="checkbox" name="" class="checkbox format GAA">
+            </div>
+            <div class="materia mat5">
+                <h4>Pesquisa e Prática Pedagógica III</h4>
+                <input type="checkbox" name="" class="checkbox  PPP3">
+            </div>
+            <div class="materia mat6">
+                <h4>Seminário Temático Interdisciplinar III</h4>
+                <input type="checkbox" name="" class="checkbox">
+            </div>
+            <label>
 
-    <section id="fourth_semester" class="sec">
-      <div class="progress_bar">
-        <div class="progress"></div>
-      </div>
-      <div class="title">
-        <h2>Quarto Semestre</h2>
-        <p>Carga horária: 360</p>
-        <p style="font-size: x-small;">
-          <a class="check_all" href="#fourth_semester">Marque todas as matérias</a>
-        </p>
-      </div>
-      <div class="materia mat1">
-        <h4>Didática</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat2">
-        <h4>Engenharia de Software</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat3">
-        <h4>Organização e Arquitetura de Computadores</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat4">
-        <h4>Matemática Aplicada</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat5">
-        <h4>Pesquisa e Prática Pedagógica IV</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat6">
-        <h4>Seminário Temático Interdisciplinar IV</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
+            </label>
+        </section>
 
-      <label>
+        <section id="fourth_semester" class="sec">
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="title">
+                <h2>Quarto Semestre</h2>
+                <p>Carga horária: 360</p>
+                <p style="font-size: x-small;">
+                    <a class="check_all" href="#fourth_semester">Marque todas as matérias</a>
+                </p>
+            </div>
+            <div class="materia mat1">
+                <h4>Didática</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat2">
+                <h4>Engenharia de Software</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat3">
+                <h4>Organização e Arquitetura de Computadores</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat4">
+                <h4>Matemática Aplicada</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat5">
+                <h4>Pesquisa e Prática Pedagógica IV</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat6">
+                <h4>Seminário Temático Interdisciplinar IV</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
 
-      </label>
-    </section>
+            <label>
 
-    <section id="fifth_semester" class="sec">
-      <div class="progress_bar">
-        <div class="progress"></div>
-      </div>
-      <div class="title">
-        <h2>Quinto Semestre</h2>
-        <p>Carga horária: 360</p>
-        <p style="font-size: x-small;">
-          <a class="check_all" href="#fifth_semester">Marque todas as matérias</a>
-        </p>
-      </div>
-      <div class="materia mat1">
-        <h4>Políticas Educacionais</h4>
-        <input type="checkbox" name="Políticas Educacionais" class="checkbox ">
-      </div>
-      <div class="materia mat2">
-        <h4>Banco de Dados</h4>
-        <input type="checkbox" name="Banco de Dados" class="checkbox ">
-      </div>
-      <div class="materia mat3">
-        <h4>Análise e Projetos de Sistemas da Informação</h4>
-        <input type="checkbox" name="Análise e Projetos de Sistemas da Informação" class="checkbox ">
-      </div>
-      <div class="materia mat4">
-        <h4>Sistemas Operacionais</h4>
-        <input type="checkbox" name="Sistemas Operacionais" class="checkbox ">
-      </div>
-      <div class="materia mat5">
-        <h4>Estagio I</h4>
-        <input type="checkbox" name="Estagio I" class="checkbox ">
-      </div>
-      <div class="materia mat6">
-        <h4>Libras</h4>
-        <input type="checkbox" name="Libras" class="checkbox ">
-      </div>
+            </label>
+        </section>
 
-    </section>
+        <section id="fifth_semester" class="sec">
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="title">
+                <h2>Quinto Semestre</h2>
+                <p>Carga horária: 360</p>
+                <p style="font-size: x-small;">
+                    <a class="check_all" href="#fifth_semester">Marque todas as matérias</a>
+                </p>
+            </div>
+            <div class="materia mat1">
+                <h4>Políticas Educacionais</h4>
+                <input type="checkbox" name="Políticas Educacionais" class="checkbox ">
+            </div>
+            <div class="materia mat2">
+                <h4>Banco de Dados</h4>
+                <input type="checkbox" name="Banco de Dados" class="checkbox ">
+            </div>
+            <div class="materia mat3">
+                <h4>Análise e Projetos de Sistemas da Informação</h4>
+                <input type="checkbox" name="Análise e Projetos de Sistemas da Informação" class="checkbox ">
+            </div>
+            <div class="materia mat4">
+                <h4>Sistemas Operacionais</h4>
+                <input type="checkbox" name="Sistemas Operacionais" class="checkbox ">
+            </div>
+            <div class="materia mat5">
+                <h4>Estagio I</h4>
+                <input type="checkbox" name="Estagio I" class="checkbox ">
+            </div>
+            <div class="materia mat6">
+                <h4>Libras</h4>
+                <input type="checkbox" name="Libras" class="checkbox ">
+            </div>
 
-    <section id="sixth_semester" class="sec">
-      <div class="progress_bar">
-        <div class="progress"></div>
-      </div>
-      <div class="title">
-        <h2>Sexto Semestre</h2>
-        <p>Carga horária: 416</p>
-        <p style="font-size: x-small;">
-          <a class="check_all" href="#sixth_semester">Marque todas as matérias</a>
-        </p>
-      </div>
-      <div class="materia mat1">
-        <h4>TCC I</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat2">
-        <h4>Banco de Dados II</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat3">
-        <h4>Desenvolvimento Web I</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat4">
-        <h4>Redes de Computadores</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat5">
-        <h4>Estágio II</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat6 opt">
-        <select name="" id="">
-          <option value="">Optativas</option>
-          <option value="lpt">Leitura e Produção de Texto</option>
-          <option value="lpt">Software Livre e inclusão Digital</option>
-          <option value="lpt">Interface Homem Máquina</option>
-          <option value="lpt">Designer Instrucional</option>
-          <option value="lpt">Tecnologias Assistivas na Educação Inclusiva</option>
-          <option value="lpt">Simulação de Sistemas</option>
-          <option value="lpt">Laboratório de Programação Avançada</option>
-          <option value="lpt">Segurança da Informação</option>
-          <option value="lpt">Redes sem Fio</option>
-          <option value="lpt">Jogos Eletrônicos em Educação</option>
-          <option value="lpt">Aprendizagem Cooperativa</option>
-        </select>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <label>
+        </section>
 
-      </label>
+        <section id="sixth_semester" class="sec">
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="title">
+                <h2>Sexto Semestre</h2>
+                <p>Carga horária: 416</p>
+                <p style="font-size: x-small;">
+                    <a class="check_all" href="#sixth_semester">Marque todas as matérias</a>
+                </p>
+            </div>
+            <div class="materia mat1">
+                <h4>TCC I</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat2">
+                <h4>Banco de Dados II</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat3">
+                <h4>Desenvolvimento Web I</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat4">
+                <h4>Redes de Computadores</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat5">
+                <h4>Estágio II</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat6 opt">
+                <select name="" id="">
+                    <option value="">Optativas</option>
+                    <option value="lpt">Leitura e Produção de Texto</option>
+                    <option value="lpt">Software Livre e inclusão Digital</option>
+                    <option value="lpt">Interface Homem Máquina</option>
+                    <option value="lpt">Designer Instrucional</option>
+                    <option value="lpt">Tecnologias Assistivas na Educação Inclusiva</option>
+                    <option value="lpt">Simulação de Sistemas</option>
+                    <option value="lpt">Laboratório de Programação Avançada</option>
+                    <option value="lpt">Segurança da Informação</option>
+                    <option value="lpt">Redes sem Fio</option>
+                    <option value="lpt">Jogos Eletrônicos em Educação</option>
+                    <option value="lpt">Aprendizagem Cooperativa</option>
+                </select>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <label>
 
-    </section>
+            </label>
 
-    <section id="seventh_semester" class="sec">
-      <div class="progress_bar">
-        <div class="progress"></div>
-      </div>
-      <div class="title">
-        <h2>Sétimo Semestre</h2>
-        <p>Carga horária: 390</p>
-        <p style="font-size: x-small;">
-          <a class="check_all" href="#seventh_semester">Marque todas as matérias</a>
-        </p>
-      </div>
-      <div class="materia mat1">
-        <h4>Multimídia na Educação</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat2">
-        <h4>Software Educacional</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat3">
-        <h4>Desenvolvimento Web II</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat4">
-        <h4>Aplicações Gráficas</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat5">
-        <h4>Estágio III</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat6 opt">
-        <select name="" id="">
-          <option value="">Optativas</option>
+        </section>
 
-          <option value="lpt">Leitura e Produção de Texto</option>
-          <option value="lpt">Software Livre e inclusão Digital</option>
-          <option value="lpt">Interface Homem Máquina</option>
-          <option value="lpt">Designer Instrucional</option>
-          <option value="lpt">Tecnologias Assistivas na Educação Inclusiva</option>
-          <option value="lpt">Simulação de Sistemas</option>
-          <option value="lpt">Laboratório de Programação Avançada</option>
-          <option value="lpt">Segurança da Informação</option>
-          <option value="lpt">Redes sem Fio</option>
-          <option value="lpt">Jogos Eletrônicos em Educação</option>
-          <option value="lpt">Aprendizagem Cooperativa </option>
+        <section id="seventh_semester" class="sec">
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="title">
+                <h2>Sétimo Semestre</h2>
+                <p>Carga horária: 390</p>
+                <p style="font-size: x-small;">
+                    <a class="check_all" href="#seventh_semester">Marque todas as matérias</a>
+                </p>
+            </div>
+            <div class="materia mat1">
+                <h4>Multimídia na Educação</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat2">
+                <h4>Software Educacional</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat3">
+                <h4>Desenvolvimento Web II</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat4">
+                <h4>Aplicações Gráficas</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat5">
+                <h4>Estágio III</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat6 opt">
+                <select name="" id="">
+                    <option value="">Optativas</option>
 
-        </select>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
+                    <option value="lpt">Leitura e Produção de Texto</option>
+                    <option value="lpt">Software Livre e inclusão Digital</option>
+                    <option value="lpt">Interface Homem Máquina</option>
+                    <option value="lpt">Designer Instrucional</option>
+                    <option value="lpt">Tecnologias Assistivas na Educação Inclusiva</option>
+                    <option value="lpt">Simulação de Sistemas</option>
+                    <option value="lpt">Laboratório de Programação Avançada</option>
+                    <option value="lpt">Segurança da Informação</option>
+                    <option value="lpt">Redes sem Fio</option>
+                    <option value="lpt">Jogos Eletrônicos em Educação</option>
+                    <option value="lpt">Aprendizagem Cooperativa </option>
 
-      <label>
+                </select>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
 
-      </label>
-    </section>
-    <section id="eighth_semester" class="sec">
-      <div class="progress_bar">
-        <div class="progress"></div>
-      </div>
-      <div class="title">
-        <h2>Oitavo Semestre</h2>
-        <p>Carga horária: 360</p>
-        <p style="font-size: x-small;">
-          <a class="check_all" href="#eighth_semester">Marque todas as matérias</a>
-        </p>
-      </div>
-      <div class="materia mat1">
-        <h4>TCC II</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat2">
-        <h4>Ambientes Virtuais de Aprendizagem</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat3">
-        <h4>Inteligência Artificial</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat4">
-        <h4>Estágio IV</h4>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
-      <div class="materia mat5">
-        <div class="opt">
-          <select name="" id="">
-            <option value="">Optativas</option>
+            <label>
 
-            <option value="lpt">Leitura e Produção de Texto</option>
-            <option value="lpt">Software Livre e inclusão Digital</option>
-            <option value="lpt">Interface Homem Máquina</option>
-            <option value="lpt">Designer Instrucional</option>
-            <option value="lpt">Tecnologias Assistivas na Educação Inclusiva</option>
-            <option value="lpt">Simulação de Sistemas</option>
-            <option value="lpt">Laboratório de Programação Avançada</option>
-            <option value="lpt">Segurança da Informação</option>
-            <option value="lpt">Redes sem Fio</option>
-            <option value="lpt">Jogos Eletrônicos em Educação</option>
-            <option value="lpt">Aprendizagem Cooperativa </option>
-        </div>
-        </select>
-        <input type="checkbox" name="" class="checkbox ">
-      </div>
+            </label>
+        </section>
+        <section id="eighth_semester" class="sec">
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="title">
+                <h2>Oitavo Semestre</h2>
+                <p>Carga horária: 360</p>
+                <p style="font-size: x-small;">
+                    <a class="check_all" href="#eighth_semester">Marque todas as matérias</a>
+                </p>
+            </div>
+            <div class="materia mat1">
+                <h4>TCC II</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat2">
+                <h4>Ambientes Virtuais de Aprendizagem</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat3">
+                <h4>Inteligência Artificial</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat4">
+                <h4>Estágio IV</h4>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
+            <div class="materia mat5">
+                <div class="opt">
+                    <select name="" id="">
+                        <option value="">Optativas</option>
 
-      <label>
+                        <option value="lpt">Leitura e Produção de Texto</option>
+                        <option value="lpt">Software Livre e inclusão Digital</option>
+                        <option value="lpt">Interface Homem Máquina</option>
+                        <option value="lpt">Designer Instrucional</option>
+                        <option value="lpt">Tecnologias Assistivas na Educação Inclusiva</option>
+                        <option value="lpt">Simulação de Sistemas</option>
+                        <option value="lpt">Laboratório de Programação Avançada</option>
+                        <option value="lpt">Segurança da Informação</option>
+                        <option value="lpt">Redes sem Fio</option>
+                        <option value="lpt">Jogos Eletrônicos em Educação</option>
+                        <option value="lpt">Aprendizagem Cooperativa </option>
+                </div>
+                </select>
+                <input type="checkbox" name="" class="checkbox ">
+            </div>
 
-      </label>
-    </section>
+            <label>
 
-    <section id="outhers" class="sec">
-      <div class="title">
-        <h2>Optativas</h2>
-        <p>Carga horária: 360</p>
-      </div>
-      <div class="materia mat1">
-        <h4>Leitura e Produção de Texto </h4>
+            </label>
+        </section>
 
-      </div>
-      <div class="materia mat2">
-        <h4>Interface Homem Máquina</h4>
+        <section id="outhers" class="sec">
+            <div class="title">
+                <h2>Optativas</h2>
+                <p>Carga horária: 360</p>
+            </div>
+            <div class="materia mat1">
+                <h4>Leitura e Produção de Texto </h4>
 
-      </div>
-      <div class="materia mat3">
-        <h4>Designer Instrucional</h4>
+            </div>
+            <div class="materia mat2">
+                <h4>Interface Homem Máquina</h4>
 
-      </div>
-      <div class="materia mat4">
-        <h4>Software Livre e inclusão Digital</h4>
+            </div>
+            <div class="materia mat3">
+                <h4>Designer Instrucional</h4>
 
-      </div>
-      <div class="materia mat5">
-        <h4>Tecnologias Assistivas na Educação Inclusiva</h4>
+            </div>
+            <div class="materia mat4">
+                <h4>Software Livre e inclusão Digital</h4>
 
-      </div>
-      <div class="materia mat6">
-        <h4>Simulação de Sistemas</h4>
+            </div>
+            <div class="materia mat5">
+                <h4>Tecnologias Assistivas na Educação Inclusiva</h4>
 
-      </div>
-      <div class="materia mat7">
-        <h4>Laboratório de Programação Avançada</h4>
+            </div>
+            <div class="materia mat6">
+                <h4>Simulação de Sistemas</h4>
 
-      </div>
-      <div class="materia mat8">
-        <h4>Segurança da Informação</h4>
+            </div>
+            <div class="materia mat7">
+                <h4>Laboratório de Programação Avançada</h4>
 
-      </div>
-      <div class="materia mat9">
-        <h4>Redes sem Fio</h4>
+            </div>
+            <div class="materia mat8">
+                <h4>Segurança da Informação</h4>
 
-      </div>
-      <div class="materia mat10">
-        <h4>Jogos Eletrônicos em Educação</h4>
+            </div>
+            <div class="materia mat9">
+                <h4>Redes sem Fio</h4>
 
-      </div>
-      <div class="materia mat11">
-        <h4>Tópicos Especiais</h4>
+            </div>
+            <div class="materia mat10">
+                <h4>Jogos Eletrônicos em Educação</h4>
 
-      </div>
-      <div class="materia mat11">
-        <h4>Aprendizagem Cooperativa em Ambientes Computacionais</h4>
+            </div>
+            <div class="materia mat11">
+                <h4>Tópicos Especiais</h4>
 
-      </div>
-    </section>
-  </div>
+            </div>
+            <div class="materia mat11">
+                <h4>Aprendizagem Cooperativa em Ambientes Computacionais</h4>
 
-  <div id="explain" class="explain">
-    <div class="explain_content">
-      <span class="close">&times;</span>
-      <h3></h3>
-      <p></p>
+            </div>
+        </section>
     </div>
-  </div>
 
-  <footer>
-    <figure>
-      <img src="" alt="">
-      <figcaption></figcaption>
-    </figure>
-    <ul>
-      <li> <a href="f.manoel.neto312@gmail.com" class="email">f.manoel.neto312@gmail.com</a></li>
-      <li> <a href="mandre404@gmail.com" class="email">mandre404@gmail.com</a></li>
-      <li> <a href="yurraph@gmail.com" class="email">yurraph@gmail.com</a></li>
-      <li> <a href="lucfeiosasouza@gmail.com" class="email">lucfeiosasouza@gmail.com</a></li>
-    </ul>
-  </footer>
+    <div id="explain" class="explain">
+        <div class="explain_content">
+            <span class="close">&times;</span>
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+
+    <footer>
+        <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+        <ul>
+            <li> <a href="f.manoel.neto312@gmail.com" class="email">f.manoel.neto312@gmail.com</a></li>
+            <li> <a href="mandre404@gmail.com" class="email">mandre404@gmail.com</a></li>
+            <li> <a href="yurraph@gmail.com" class="email">yurraph@gmail.com</a></li>
+            <li> <a href="lucfeiosasouza@gmail.com" class="email">lucfeiosasouza@gmail.com</a></li>
+        </ul>
+    </footer>
 
 </body>
 <script src="assets/js/subjectsInfo.js"></script>

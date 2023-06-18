@@ -1,0 +1,29 @@
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side_navbar {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sec {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title,
+    .progress_bar {
+        grid-column-end: 3;
+    }
+
+
+}
