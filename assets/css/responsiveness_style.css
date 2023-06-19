@@ -4,7 +4,7 @@
         flex-direction: column;
     }
 
-    .side_navbar {
+    aside {
         display: none;
     }
 
@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 }
 
@@ -24,6 +25,63 @@
     .progress_bar {
         grid-column-end: 3;
     }
+}
 
+@media screen and (max-width: 460px) {
+    .sec {
+        grid-template-columns: repeat(6, 50%);
+        grid-template-rows: repeat(2, 1fr);
+        overflow: scroll;
+    }
+
+    #outhers {
+        grid-template-columns: repeat(12, 50%);
+    }
+
+    .title,
+    .progress_bar {
+        position: sticky;
+        left: 0;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        transform: scale(0.8);
+        align-items: center;
+    }
+
+    .materia {
+        grid-row-start: 2;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title{
+        transform: scale(0.6);
+        margin: 0;
+    }
+
+    .sec {
+        grid-template-columns: repeat(6, 50%);
+        grid-template-rows: repeat(2, 47%);
+        height: auto;
+    }
+
+    .materia, h4{
+        transform: scale(0.9);
+        margin: 0;
+        padding: 2% 1%;
+    }
+
+
+
+    .checkbox{
+        margin: 2%;
+    }
+
+    .progress_bar{
+        height: 1vh;
+    }
 
 }

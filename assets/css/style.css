@@ -18,6 +18,7 @@ h2 {
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 html {
@@ -29,6 +30,8 @@ html {
 body {
     background-image: url("../media/images/fundo.jpg");
     background-size: 20%;
+    height: 100%;
+    width: 100%;
 
     display: grid;
     grid-template-areas:
@@ -60,8 +63,9 @@ header {
 
 #to_top_btn {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 5vh;
+    right: 5%;
+    z-index: 99999;
 
     border-radius: 15%;
     background-color: var(--primary-color);
